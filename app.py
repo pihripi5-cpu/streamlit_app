@@ -1,7 +1,10 @@
 import streamlit as st
-st.title("My Page On  Streamlit application")
+st.title("Checking the person eleigible for vate or not ")
 
-name=st.text_input("Enter your name")
+age=st.number_input("Enter your age...")
 
 if st.button("Submit"):
-  st.write(f"Hello,{name}")
+    if age>=18:
+        st.title("Eligible for Vote...")
+    else:
+        st.title("Not eligible for Vote")
